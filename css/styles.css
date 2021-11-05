@@ -113,7 +113,8 @@ transition: all 0.3s ease;
 
 .hero {
   height: 70vh;
-  background: url("/assets/imagen_hero.png") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)),
+    url("/assets/imagen_hero.jpg") no-repeat center center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -123,9 +124,18 @@ transition: all 0.3s ease;
   align-items: center;
   gap: 30px;
 }
-
+.hero_img{
+  position:relative;
+}
 .hero__img img {
   width: 600px;
+}
+
+#certificacion-kyocera{
+  width: 150px;
+  position: absolute;
+  left: 50px;
+  top:100px;
 }
 
 .hero__texto {
@@ -892,6 +902,10 @@ text-align: center;
   }
   .main-servicios__servicio{
     width: 80%;
+  }
+
+  #certificacion-kyocera{
+    display:none;
   }
 }
 
