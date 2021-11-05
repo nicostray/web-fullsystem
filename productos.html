@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full System EIRL - Nuestros productos</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="shortcut icon" href="/assets/favicon_black.ico">
+</head>
+
+<body>
+    <nav class="nav">
+        <!--navbar -->
+        <div class="nav__container">
+            <!-- content -->
+
+            <div class="nav__logo">
+                <!-- logo-->
+                <a href="/index.html"><img src="/assets/logo_completo.png" alt="logo empresa"></a>
+            </div>
+
+            <ul class="nav__links">
+                <!-- menu list-->
+
+                <div class="icon cancel-btn" onclick="esconderMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <li class="nav__link"><a href="/index.html">Inicio</a></li>
+                <li class="nav__link"><a href="/servicios.html">Servicios</a></li>
+                <li class="nav__link  nav__link--active"><a href="/productos.html">Productos</a></li>
+                <li class="nav__link"><a href="/nosotros.html">Nosotros</a></li>
+                <li class="nav__link"><a href="/contacto.html">Contacto</a></li>
+
+            </ul>
+            <div class="icon menu-btn" onclick="desplegarMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-productos">
+        <div class="hero-productos__texto">
+            <h1>Productos</h1>
+            <p>¡Mira los que tenemos disponible para tu negocio!</p>
+        </div>
+    </section>
+
+    <section class="main-productos">
+        <div class="main-productos__categorias">
+            <!--contenedor izquierdo -->
+            <h2>Categorías</h2>
+            <ul>
+                <li class="main-productos__btn-categorias" onclick="mostrarCategoria(0)">Multifuncionales B&N</li>
+                <li class="main-productos__btn-categorias" onclick="mostrarCategoria(1)">Multifuncionales Color</li>
+                <li class="main-productos__btn-categorias" onclick="mostrarCategoria(2)">Cartuchos de Tóner</li>
+            </ul>
+        </div>
+
+        <div class="main-productos__productos">
+            <!--contenedor derecho -->
+            <div class="main-productos__container">
+                <!-- layout de productos -->
+                <h3>Multifuncionales Blanco y Negro</h3>
+                <div class="main-productos__cards">
+                    <!-- Contenedor de cards -->
+                    <div class="main-productos__card">
+                        <img class="main-productos__card-img" src="/assets/equipos/m2640.png" alt="multifuncional m2640">
+                        <p class="main-productos__card-title">Kyocera M2640</p>
+                        <a class="main-productos__card-btn" onclick="verProducto('Kyocera M2640')">Ver producto</a>
+                    </div>
+
+                    <div class="main-productos__card">
+                        <img class="main-productos__card-img" src="/assets/equipos/m3655idn.png" alt="multifuncional m3655">
+                        <p class="main-productos__card-title">Kyocera M3655</p>
+                        <a class="main-productos__card-btn" onclick="verProducto('Kyocera M3655')">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-productos__container">
+                <!-- layout de productos -->
+                <h3>Multifuncionales Color</h3>
+                <div class="main-productos__cards">
+                    <!-- Contenedor de cards -->
+                    <div class="main-productos__card">
+                        <img class="main-productos__card-img" src="/assets/equipos/ECOSYS M6235cdn.png" alt="multifuncional m6235">
+                        <p class="main-productos__card-title">M6235cidn</p>
+                        <a class="main-productos__card-btn" onclick="verProducto('Kyocera M6235')">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-productos__container">
+                <!-- layout de productos -->
+                <h3>Toner</h3>
+                <div class="main-productos__cards">
+                    <!-- Contenedor de cards -->
+                    <div class="main-productos__card">
+                        <img class="main-productos__card-img" src="/assets/equipos/toner.png" alt="cartuchos de toner">
+                        <p class="main-productos__card-title">Tóner multimarca</p>
+                        <a class="main-productos__card-btn" href="/contacto.html">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <p class="main-servicios__arriendos-disclaimer">*Contamos con equipos nuevos y refaccionados para la venta, además <strong>todos tienen garantía</strong>.</p> </br>
+
+    <div class="ventana-producto">
+        <div class="ventana-producto__container">
+            <div class="ventana-producto__titulo-container">
+                <h4 class="ventana-producto__titulo">Ecosys M2640</h4>
+                <a class="ventana-producto__btn-pdf" href="" target="_blank" > <i class="far fa-file-pdf"></i> PDF</a>
+                <i class="ventana-producto__salir fas fa-times" onclick="ocultarInfo()"></i>
+            </div>
+            <img class="ventana-producto__imagen" src="/assets/equipos/m2640.png" alt="multifuncional m2640">
+            <div class="ventana-producto__caracteristicas">
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="ppm">40</p>
+                    <p class="ventana-producto__caracteristica-fija">Páginas por minuto</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="multifuncional">A4</p>
+                    <p class="ventana-producto__caracteristica-fija">Multifuncional</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="ram">512</p>
+                    <p class="ventana-producto__caracteristica-fija">Memoria RAM</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="capacidadHojas">350</p>
+                    <p class="ventana-producto__caracteristica-fija">Hojas de capacidad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <div class="footer__img">
+                <a href="/index.html"><img src="/assets/logo_icono.png" alt="icono de full system"></a>
+            </div>
+            <div class="footer__container-de-elementos">
+                <div class="footer__contacto">
+                    <h3>Contáctanos</h3>
+                    <p><b>Teléfono:</b> +569 99368579</p>
+                    <p><b>Correo:</b> contacto@fullsystemeirl.com</p>
+                </div>
+
+                <div class="footer__rrss">
+                    <h3>Siguenos</h3>
+                    <a href="https://www.instagram.com/fullsystem.eirl/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Full-System/100057038966590/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://cl.linkedin.com/in/helmut-peter-olave-frantzen-41734595" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <a href="https://api.whatsapp.com/send?phone=56999368579" target="_blank" class="btn-wsp"><i
+            class="fab fa-whatsapp"></i></a>
+    <script src='/app.js'></script>
+    <script src="/productos.js"></script>
+</body>
+
+</html>

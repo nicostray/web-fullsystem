@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full System EIRL - Nuestros servicios</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="shortcut icon" href="/assets/favicon_black.ico">
+</head>
+
+<body>
+    <nav class="nav">
+        <!--navbar -->
+        <div class="nav__container">
+            <!-- content -->
+
+            <div class="nav__logo">
+                <!-- logo-->
+                <a href="/index.html"><img src="/assets/logo_completo.png"></a>
+            </div>
+
+            <ul class="nav__links">
+                <!-- menu list-->
+
+                <div class="icon cancel-btn" onclick="esconderMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <li class="nav__link"><a href="/index.html">Inicio</a></li>
+                <li class="nav__link  nav__link--active"><a href="/servicios.html">Servicios</a></li>
+                <li class="nav__link"><a href="/productos.html">Productos</a></li>
+                <li class="nav__link"><a href="/nosotros.html">Nosotros</a></li>
+                <li class="nav__link"><a href="/contacto.html">Contacto</a></li>
+
+            </ul>
+            <div class="icon menu-btn" onclick="desplegarMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-servicios">
+        <div class="hero-servicios__texto">
+            <h1>Servicios disponibles</h1>
+            <p>Mira lo que tenemos para ofrecer</p>
+        </div>
+    </section>
+
+    <section class="main-servicios">
+        <h2 class="main-servicios__titulo">Servicios</h2>
+        <div class="main-servicios__container-servicios">
+            <div class="main-servicios__servicio">
+                <img class="main-servicios__servicio-imagen" src="./assets/servicio-tecnico.jpg" alt="persona reparando un computador">
+                <div class="main-servicios__servicio-descripcion">
+                    <h3>Reparación de computadores</h3>
+                    <p>- Formateos <br/>- Cambio de piezas <br/>- Diagnóstico <br/>- Instalación de programas <br/>- Mantención</p>
+                    <a href="/contacto.html" class="main-servicios__card-btn">Contactar</a>
+                </div>
+            </div>
+
+            <div class="main-servicios__servicio">
+                <img class="main-servicios__servicio-imagen" src="./assets/reparacion-impresora.jpg" alt="persona reparando una impresora">
+                <div class="main-servicios__servicio-descripcion">
+                    <h3>Reparación de multifuncionales</h3>
+                    <p>- Problemas de atasco <br/>- Impresión borrosa <br/>- Manchas en el papel <br/>- Configuración <br/>- Mantención general</p>
+                    <a href="/contacto.html" class="main-servicios__card-btn">Contactar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-servicios__arriendos">
+            <h3 class="main-servicios__arriendos-titulo">Arriendo de multifuncionales</h3>
+            <p class="main-servicios__arriendos-texto">Nuestro servicio de arriendo consiste en instalar uno o más equipos en sus dependencias, donde usted
+                pone las hojas y nosotros el tóner, además todo el servicio técnico que necesite el equipo, es
+                cubierto por nosotros.<br/><br/>
+
+                Todos nuestros equipos se conectan a red y se puede imprimir directo desde su computador o teléfono,
+                además cuentan con escáner a correo.<br/><br/>
+
+                El costo mensual variará dependiendo del costo por copia/escáner que tenga la multifuncional instalada y
+                de cuántas impresiones/escaneos haga usted.</p>
+            <h4 class="main-servicios__arriendos-titulo">Planes de arriendo disponibles</h4>
+            <p class="main-servicios__arriendos-subtitulo">Escoja el que más se adecue a su carga de trabajo</p>
+            <div class="main-servicios__cards">
+
+                <div class="main-servicios__card">
+                    <p class="main-servicios__card-carga">Carga baja</p>
+                    <p class="main-servicios__card-titulo">Costo por Página/Escaneo</p>
+                    <p class="main-servicios__card-precio"><sup>$</sup>14</p>
+                    <p class="main-servicios__card-cantidad">*máximo 5.000 impresiones mensuales</p>
+                    <a class="main-servicios__card-btn2" onclick="verProducto('Kyocera M2035')" >Ver equipo <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="main-servicios__card">
+                    <p class="main-servicios__card-carga">Carga Alta</p>
+                    <p class="main-servicios__card-titulo">Costo por Página/Escaneo</p>
+                    <p class="main-servicios__card-precio"><sup>$</sup>12</p>
+                    <p class="main-servicios__card-cantidad">*máximo 40.000 impresiones mensuales</p>
+                    <a class="main-servicios__card-btn2" onclick="verProducto('Kyocera M3655')">Ver equipo <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+
+                <div class="main-servicios__card">
+                    <p class="main-servicios__card-carga">Carga Alta</p>
+                    <p class="main-servicios__card-titulo">Costo por Página/Escaneo</p>
+                    <p class="main-servicios__card-precio"><sup>$</sup>14</p>
+                    <p class="main-servicios__card-cantidad">*máximo 40.000 impresiones mensuales</p>
+                    <a class="main-servicios__card-btn2" onclick="verProducto('Kyocera TaskAlfa 5501i')">Ver equipo <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <p class="main-servicios__arriendos-disclaimer">*Los valores pueden variar dependiendo de factores no contemplados.</p>   </br>
+        </div>
+    </section>
+
+    <div class="ventana-producto">
+        <div class="ventana-producto__container">
+            <div class="ventana-producto__titulo-container">
+                <h4 class="ventana-producto__titulo">Ecosys M2640</h4>
+                <a class="ventana-producto__btn-pdf" href="" target="_blank" > <i class="far fa-file-pdf"></i> PDF</a>
+                <i class="ventana-producto__salir fas fa-times" onclick="ocultarInfo()"></i>
+            </div>
+            <img class="ventana-producto__imagen" src="/assets/equipos/m2640.png" alt="multifuncional M2640">
+            <div class="ventana-producto__caracteristicas">
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="ppm">40</p>
+                    <p class="ventana-producto__caracteristica-fija">Páginas por minuto</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="multifuncional">A4</p>
+                    <p class="ventana-producto__caracteristica-fija">Multifuncional</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="ram">512</p>
+                    <p class="ventana-producto__caracteristica-fija">Memoria RAM</p>
+                </div>
+
+                <div class="ventana-producto__caracteristica">
+                    <p class="ventana-producto__caracteristica-variable" id="capacidadHojas">350</p>
+                    <p class="ventana-producto__caracteristica-fija">Hojas de capacidad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <div class="footer__img">
+                <a href="/index.html"><img src="/assets/logo_icono.png" alt="icono de full system"></a>
+            </div>
+            <div class="footer__container-de-elementos">
+                <div class="footer__contacto">
+                    <h3>Contáctanos</h3>
+                    <p><b>Teléfono:</b> +569 99368579</p>
+                    <p><b>Correo:</b> contacto@fullsystemeirl.com</p>
+                </div>
+
+                <div class="footer__rrss">
+                    <h3>Siguenos</h3>
+                    <a href="https://www.instagram.com/fullsystem.eirl/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Full-System/100057038966590/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://cl.linkedin.com/in/helmut-peter-olave-frantzen-41734595" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=56999368579" target="_blank" class="btn-wsp"><i
+            class="fab fa-whatsapp"></i></a>
+    <script src='/app.js'></script>
+    <script src='./productos.js'></script>
+</body>
+
+</html>

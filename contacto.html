@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full System EIRL - Contáctanos</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="shortcut icon" href="/assets/favicon_black.ico">
+</head>
+
+<body>
+    <nav class="nav">
+        <!--navbar -->
+        <div class="nav__container">
+            <!-- content -->
+
+            <div class="nav__logo">
+                <!-- logo-->
+                <a href="/index.html"><img src="/assets/logo_completo.png" alt="logo empresa"></a>
+            </div>
+
+            <ul class="nav__links">
+                <!-- menu list-->
+
+                <div class="icon cancel-btn" onclick="esconderMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <li class="nav__link"><a href="/index.html">Inicio</a></li>
+                <li class="nav__link"><a href="/servicios.html">Servicios</a></li>
+                <li class="nav__link"><a href="/productos.html">Productos</a></li>
+                <li class="nav__link"><a href="/nosotros.html">Nosotros</a></li>
+                <li class="nav__link  nav__link--active"><a href="/contacto.html">Contacto</a></li>
+                
+            </ul>
+            <div class="icon menu-btn" onclick="desplegarMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--<div class="fondo-nav"></div>-->
+
+    <section class="hero-contacto">
+        <div class="hero-contacto__texto">
+            <h1>Contáctate con nosotros</h1>
+            <p>Elige la opción que más te acomode</p>
+        </div>
+    </section>
+
+    <section class="main-contacto">
+            <div class="main-contacto__izq">
+
+                <h2>Canales de atención</h2>
+
+                <div class="main-contacto__caja">
+                <h3>Chatea con nosotros</h3>
+                <p class="main-contacto__subtitulo">Contáctanos a través de whatsapp</p>
+                <p class="contacto-wsp"><a href="https://api.whatsapp.com/send?phone=56999368579" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></p>
+                </div>
+
+                <hr class="main-contacto__divisor">
+                
+                <div class="main-contacto__caja">
+                <h3> Llámanos</h3>
+                <p class="main-contacto__subtitulo">Contáctanos vía llamada telefónica</p>
+                <p class="main-contacto__parrafo"><i class="fas fa-mobile-alt"></i> <a href="tel:999368579">9 9936 8579</a></p>
+                </div>
+
+                <hr class="main-contacto__divisor">
+                
+                <div class="main-contacto__caja">
+                <h3>Visítanos</h3>
+                <p class="main-contacto__subtitulo">Contamos con estacionamiento</p>
+                <p class="main-contacto__parrafo"><i class="fas fa-map-marker-alt"></i></p>
+                <p class="main-contacto__parrafo"> <a href="https://www.google.com/maps/place/Abd%C3%B3n+Cifuentes+1366,+Concepci%C3%B3n,+B%C3%ADo+B%C3%ADo/@-36.788565,-73.040163,16z/" target="_blank">Abdón Cifuentes #1366, <br> Concepción</a> </p>
+                </div>
+           
+                <hr class="main-contacto__divisor">
+                     
+                <div class="main-contacto__caja">
+                <h3>Envíanos un correo</h3>
+                <p class="main-contacto__subtitulo">Te responderemos a la brevedad</p>
+                <p class="main-contacto__parrafo"><i class="far fa-envelope"></i> <a href="mailto:contacto@fullsystemeirl.com">contacto@fullsystemeirl.com</a> </p>
+                <p class="main-contacto__parrafo"><i class="far fa-envelope"></i> <a href="mailto:fsystemeirl@hotmail.com">fsystemeirl@hotmail.com</a> </p>
+            </div>
+            </div>
+
+        <div class="main-contacto__der">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.2496137943!2d-73.04235158475264!3d-36.788565179950986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669b4fe29353b79%3A0x834969a60889a0f9!2zQWJkw7NuIENpZnVlbnRlcyAxMzY2LCBDb25jZXBjacOzbiwgQsOtbyBCw61v!5e0!3m2!1ses!2scl!4v1634311329348!5m2!1ses!2scl"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" SameSite=Lax>
+            </iframe>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <div class="footer__img">
+                <a href="/index.html"><img src="/assets/logo_icono.png" alt="icono de full system"></a>
+            </div>
+            <div class="footer__container-de-elementos">
+                <div class="footer__contacto">
+                    <h3>Contáctanos</h3>
+                    <p><b>Teléfono:</b> +569 99368579</p>
+                    <p><b>Correo:</b> contacto@fullsystemeirl.com</p>
+                </div>
+
+                <div class="footer__rrss">
+                    <h3>Siguenos</h3>
+                    <a href="https://www.instagram.com/fullsystem.eirl/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Full-System/100057038966590/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://cl.linkedin.com/in/helmut-peter-olave-frantzen-41734595" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <a href="https://api.whatsapp.com/send?phone=56999368579" target="_blank" class="btn-wsp"><i class="fab fa-whatsapp"></i></a>
+    <script src='/app.js'></script>
+</body>
+
+</html>
